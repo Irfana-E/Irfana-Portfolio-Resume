@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="IRFANA.E — Web Developer, QA & Software Testing, AI Learner, and Cyber Forensics Aspirant.">
+  <title>IRFANA.E | Digital Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/intro.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body class="portfolio-page">
+
+  <!-- Three.js Canvas -->
+  <canvas id="space"></canvas>
+
+  <!-- Intro / Access Control Overlay -->
+  <div id="intro" aria-label="Portfolio entrance screen">
+    <div class="intro-grid"></div>
+    <div class="scanline"></div>
+
+    <div class="vault-scene">
+      <div class="vault" id="vault">
+        <div class="ring"></div>
+        <div class="lock">
+          <span>PORTAL</span>
+        </div>
+      </div>
+
+      <div class="vault-copy">
+        <small id="securityText">INITIALIZING SYSTEM CHECK</small>
+        <strong>SECURE TERMINAL</strong>
+        <div class="status" id="status">VERIFYING CREDENTIALS...</div>
+        <button type="button" class="enter" id="enterBtn">ENTER</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header id="header">
+    <a href="#home" class="brand-lockup">
+      <span class="brand-monogram">IE</span>
+      <span class="brand-text">
+        IRFANA.E
+        <small>PORTFOLIO</small>
+      </span>
+    </a>
+
+    <button type="button" class="menu" id="menuBtn" aria-label="Toggle navigation" aria-expanded="false">
+      MENU
+    </button>
+
+    <nav id="nav">
+      <a href="#home" class="active">Home</a>
+      <a href="#workspace">Workspace</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#direction">Cyber Security</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-bg-layer" aria-hidden="true"></div>
+
+      <div class="hero-inner">
+        <div class="hero-kicker">ACCESS GRANTED — WELCOME TO MY DIGITAL SPACE</div>
+        <h1>IRFANA.E</h1>
+
+        <div class="hero-roles">
+          Web Developer <span>|</span> QA &amp; Software Testing <span>|</span> AI Learner
+        </div>
+
+        <p class="hero-quote">
+          "Improvements are made little by little, and Achievement is made when the littles join together as a single."
+        </p>
+
+        <!-- 3 Interactive HUD Cards -->
+        <div class="hud-actions">
+          <a href="#projects" class="hud-card">
+            <span class="hud-icon">&lt;/&gt;</span>
+            <div class="hud-meta">
+              <strong>EXPLORE MY WORK</strong>
+              <small>Featured Projects →</small>
+            </div>
+          </a>
+
+          <a href="#skills" class="hud-card">
+            <span class="hud-icon">⚙</span>
+            <div class="hud-meta">
+              <strong>MY SKILLS</strong>
+              <small>Technologies →</small>
+            </div>
+          </a>
+
+          <a href="#about" class="hud-card">
+            <span class="hud-icon">👤</span>
+            <div class="hud-meta">
+              <strong>ABOUT ME</strong>
+              <small>My Journey →</small>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#workspace" aria-label="Scroll down to explore the portfolio">
+        <span class="mouse-cue" aria-hidden="true"></span>
+        <span>SCROLL DOWN</span>
+      </a>
+    </section>
+
+    <!-- Workspace Terminal -->
+    <section class="workspace" id="workspace">
+      <div class="workspace-shell reveal">
+        <div class="workspace-top">
+          <span>IRFANA.E / DIGITAL WORKSPACE</span>
+          <span class="leds"><i></i> ONLINE</span>
+        </div>
+
+        <div class="workspace-grid">
+          <article class="module" data-modal="profile" tabindex="0" role="button">
+            <span class="num">01 / PROFILE</span>
+            <h3>Practical Learner</h3>
+            <p>Turning computing theory into reliable web interfaces, QA testing principles, and continuous digital exploration.</p>
+            <div class="mini">
+              <span>BCA</span>
+              <span>Testing</span>
+              <span>Web Dev</span>
+            </div>
+          </article>
+
+          <article class="module" data-modal="skills" tabindex="0" role="button">
+            <span class="num">02 / SKILLS LAB</span>
+            <h3>Technical Foundation</h3>
+            <p>Core programming, modern CSS/JavaScript DOM ergonomics, relational DBMS, and software verification methodologies.</p>
+            <div class="mini">
+              <span>HTML/CSS</span>
+              <span>JS</span>
+              <span>Java/SQL</span>
+            </div>
+          </article>
+
+          <article class="module" data-modal="projects" tabindex="0" role="button">
+            <span class="num">03 / PROJECT LAB</span>
+            <h3>Proof Through Execution</h3>
+            <p>Real-world delivery highlighted by commercial business platforms and live GitHub Pages codebases.</p>
+            <div class="mini">
+              <span>Live Builds</span>
+              <span>GitHub Pages</span>
+            </div>
+          </article>
+
+          <article class="module" data-modal="future" tabindex="0" role="button">
+            <span class="num">04 / NEXT DIRECTION</span>
+            <h3>Cyber Forensics Focus</h3>
+            <p>Advancing into information security architectures, threat surface analysis, and data-annotation workflows.</p>
+            <div class="mini">
+              <span>Cybersecurity</span>
+              <span>Forensics</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+      <div class="section-kicker">PROFILE / 01</div>
+      <h2>About Irfana.E</h2>
+      <p class="section-intro">
+        A constant learner, exploring, building and improving one step at a time.
+      </p>
+
+      <!-- 5-Step Progress Ribbon -->
+      <div class="journey-ribbon reveal">
+        <div class="journey-step">
+          <span class="journey-badge">01</span>
+          <strong>BCA</strong>
+          <small>Computer Applications</small>
+        </div>
+        <div class="journey-step">
+          <span class="journey-badge">02</span>
+          <strong>Software Testing</strong>
+          <small>QA Foundations</small>
+        </div>
+        <div class="journey-step">
+          <span class="journey-badge">03</span>
+          <strong>Web Development</strong>
+          <small>Build &amp; Practice</small>
+        </div>
+        <div class="journey-step">
+          <span class="journey-badge">04</span>
+          <strong>AI Learning</strong>
+          <small>Explore &amp; Understand</small>
+        </div>
+        <div class="journey-step">
+          <span class="journey-badge">05</span>
+          <strong>Cybersecurity</strong>
+          <small>Future Direction</small>
+        </div>
+      </div>
+
+      <!-- Core Pillars -->
+      <div class="grid-3">
+        <div class="pillar-card reveal">
+          <span class="tag">BUILD</span>
+          <h3>Web Development</h3>
+          <p>Creating responsive web experiences, clean semantic markup, and strengthening practical skills through real projects.</p>
+        </div>
+
+        <div class="pillar-card reveal">
+          <span class="tag">TEST</span>
+          <h3>QA &amp; Software Testing</h3>
+          <p>Learning to examine software carefully, identify functional issues, write effective test cases, and evaluate from the user's point of view.</p>
+        </div>
+
+        <div class="pillar-card reveal">
+          <span class="tag">EXPLORE</span>
+          <h3>AI &amp; Emerging Tech</h3>
+          <p>Interested in AI and data annotation pipelines, focusing on how emerging digital tools and platforms operate internally.</p>
+        </div>
+      </div>
+
+      <!-- Status Badge -->
+      <div class="availability-pill reveal">
+        <span class="pulse-dot"></span>
+        <span><strong>Currently Open to:</strong> Remote Freelance • Contract • Project-Based Opportunities</span>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section" id="skills">
+      <div class="section-kicker">SKILLS LAB / 02</div>
+      <h2>Technical Stack</h2>
+      <p class="section-intro">
+        A practical foundation built through academic curriculum, focused QA certifications, and continuous development.
+      </p>
+
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <span class="section-kicker">01 / WEB</span>
+          <h3>Web Development</h3>
+          <div class="skill-list">
+            <span class="skill-badge">HTML5</span>
+            <span class="skill-badge">CSS3</span>
+            <span class="skill-badge">JavaScript</span>
+            <span class="skill-badge">Responsive UI</span>
+            <span class="skill-badge">DOM Manipulation</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <span class="section-kicker">02 / CORE</span>
+          <h3>Programming</h3>
+          <div class="skill-list">
+            <span class="skill-badge">Java</span>
+            <span class="skill-badge">C</span>
+            <span class="skill-badge">C++</span>
+            <span class="skill-badge">Data Structures</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <span class="section-kicker">03 / STORAGE</span>
+          <h3>Database Systems</h3>
+          <div class="skill-list">
+            <span class="skill-badge">SQL</span>
+            <span class="skill-badge">DBMS</span>
+            <span class="skill-badge">RDBMS Architecture</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <span class="section-kicker">04 / QUALITY</span>
+          <h3>Software Testing</h3>
+          <div class="skill-list">
+            <span class="skill-badge">Software Testing</span>
+            <span class="skill-badge">Test Case Design</span>
+            <span class="skill-badge">Bug Reporting</span>
+            <span class="skill-badge">Verification</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <span class="section-kicker">05 / TOOLS</span>
+          <h3>Workflow &amp; IDEs</h3>
+          <div class="skill-list">
+            <span class="skill-badge">Git</span>
+            <span class="skill-badge">GitHub</span>
+            <span class="skill-badge">Eclipse IDE</span>
+            <span class="skill-badge">VS Code</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <span class="section-kicker">06 / EXPLORATION</span>
+          <h3>Currently Exploring</h3>
+          <div class="skill-list">
+            <span class="skill-badge">AI Workflows</span>
+            <span class="skill-badge">Data Annotation</span>
+            <span class="skill-badge">System Security</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+      <div class="section-kicker">PROJECT LAB / 03</div>
+      <h2>Practical Work</h2>
+      <p class="section-intro">
+        Production deliverables and hands-on projects showing practical application of web design and testing principles.
+      </p>
+
+      <!-- Featured Project: Bata vs Brands -->
+      <div class="project-featured reveal">
+        <div class="project-num">01</div>
+        <div>
+          <span class="section-kicker">LIVE CLIENT PRODUCTION</span>
+          <h3>Bata vs Brands Showcase</h3>
+          <p>
+            A responsive website created for a local footwear business, bringing product categories, offers, business information, gallery, contact details and customer enquiry options into one accessible digital experience.
+          </p>
+
+          <div class="project-tags">
+            <span>Responsive UI</span>
+            <span>Product Catalog</span>
+            <span>WhatsApp API</span>
+            <span>Google Maps Embed</span>
+            <span>GitHub Pages</span>
+          </div>
+
+          <div class="btn-group">
+            <a class="btn" href="https://irfana-e.github.io/Bata-Vs-Brands/" target="_blank" rel="noopener noreferrer">
+              VIEW LIVE PROJECT ↗
+            </a>
+            <a class="btn secondary" href="https://github.com/irfana-e/Bata-Vs-Brands" target="_blank" rel="noopener noreferrer">
+              GITHUB REPO ↗
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Supporting Project Cards -->
+      <div class="grid-3">
+        <div class="pillar-card reveal">
+          <span class="tag">02 / PORTFOLIO</span>
+          <h3>IRFANA.E Portfolio</h3>
+          <p>This portfolio is itself an interactive demonstration of vanilla WebGL Three.js particles, accessible modal state systems, and responsive CSS glass layouts.</p>
+        </div>
+
+        <div class="pillar-card reveal">
+          <span class="tag">03 / PIPELINE</span>
+          <h3>Building in Progress</h3>
+          <p>A reserved staging slot for upcoming full-stack applications and automated QA verification test-suites.</p>
+        </div>
+
+        <div class="pillar-card reveal ai-media-card">
+          <span class="tag">04 / CREATIVE</span>
+          <h3>AI-Assisted Video &amp; Media</h3>
+          <p>Practical experience producing educational and promotional content utilizing AI-assisted voiceovers and editing pipelines.</p>
+          <div class="media-demo">
+            <div class="media-demo-label">AI VOICE + EDITING DEMO</div>
+            <a class="btn secondary media-demo-btn" href="https://youtu.be/6C9FkRjNDBk?si=u-NdJ2bqlTvcG19o" target="_blank" rel="noopener noreferrer">
+              WATCH HERE ↗
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section" id="education">
+      <div class="section-kicker">EDUCATION / 04</div>
+      <h2>Education &amp; Certification</h2>
+      <p class="section-intro">
+        Undergraduate studies in computer applications combined with targeted industry testing certifications.
+      </p>
+
+      <div class="timeline">
+        <div class="edu-item reveal">
+          <div class="edu-marker">01</div>
+          <div class="edu-card">
+            <span class="section-kicker">BACHELOR'S DEGREE</span>
+            <h3>Bachelor of Computer Applications (BCA)</h3>
+            <div class="edu-place">University of Madras • 2023–2026</div>
+            <p>Comprehensive curriculum covering core computer science subjects: programming paradigms, data structures, relational databases, software engineering methodologies, computer graphics, and operating systems.</p>
+          </div>
+        </div>
+
+        <div class="edu-item reveal">
+          <div class="edu-marker">02</div>
+          <div class="edu-card">
+            <span class="section-kicker">CERTIFICATION • SEPTEMBER 2026</span>
+            <h3>Introduction to Software Testing</h3>
+            <div class="edu-place">University of Minnesota • Coursera</div>
+            <p>Focused training covering test-case authoring, defect life cycles, boundary value verification, and validation frameworks.</p>
+            <div class="certificate-action">
+              <a class="btn" href="https://coursera.org/share/7009da6bf2724911e481e57d561d637f" target="_blank" rel="noopener noreferrer">
+                VERIFY CERTIFICATE ↗
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="edu-item reveal">
+          <div class="edu-marker">03</div>
+          <div class="edu-card">
+            <span class="section-kicker">CURRENT FOCUS</span>
+            <h3>Continuous Learning</h3>
+            <div class="edu-place">Responsive Web Design • AI &amp; Data Annotation</div>
+            <p>Continually refining real-world frontend implementations, semantic CSS layout patterns, and data annotation workflows.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Academic Achievement Card -->
+      <div class="achievement-card reveal">
+        <span class="section-kicker">ACADEMIC EXCELLENCE</span>
+        <h3>First Mark in Computer Science — 12th Public Examination</h3>
+        <p class="achievement-note">Top academic ranking in Higher Secondary Computer Science curriculum.</p>
+        <div class="achievement-score">98 / 100</div>
+      </div>
+    </section>
+
+    <!-- Future Direction -->
+    <section class="section" id="direction">
+      <div class="section-kicker">NEXT DIRECTION / 05</div>
+      <h2>Future: Cybersecurity</h2>
+      <p class="section-intro">
+        Exploring cybersecurity and cyber forensics as a future direction while strengthening the software, web and testing foundation.
+      </p>
+
+      <div class="pillar-card reveal">
+        <span class="tag">ROADMAP</span>
+        <h3>Learn → Practice → Build → Improve → Explore</h3>
+        <p>Each interface deployed and test case executed serves as a direct stepping stone toward cybersecurity analysis and information systems defense.</p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+      <div class="contact-box reveal">
+        <div>
+          <span class="section-kicker">COMMUNICATION / 06</span>
+          <h3>Let's connect.</h3>
+          <p>Available for web development roles, QA &amp; testing collaborations, and data annotation opportunities.</p>
+        </div>
+        <div class="btn-group">
+          <a class="btn" href="mailto:irfana122005@outlook.com">EMAIL ME ↗</a>
+          <button type="button" class="btn secondary" id="copyEmailBtn">COPY EMAIL</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 IRFANA.E • BUILD • LEARN • GROW • BUILT WITH CLEAN WEB STANDARDS
+  </footer>
+
+  <!-- Workspace Modal Box -->
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-card">
+      <button type="button" class="close" id="closeModal">CLOSE [ESC]</button>
+      <span class="section-kicker" id="modalTag">MODULE</span>
+      <h3 id="modalTitle">Title</h3>
+      <p id="modalText">Details loading...</p>
+      <div class="modal-list" id="modalList"></div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/intro.js"></script>
+  <script src="js/ui-sounds.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/interactions.js"></script>
+  <script src="js/three-background.js"></script>
+</body>
+</html>
