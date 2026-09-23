@@ -1,0 +1,57 @@
+/* ============================================================
+   IRFANA.E — RESPONSIVE LAYOUT
+   ============================================================ */
+@media (max-width: 900px) {
+  .journey-ribbon { grid-template-columns: repeat(3, 1fr); }
+  .grid-3, .skills-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 800px) {
+  nav { display: none; }
+  .menu { display: block; }
+
+  header.mobile-open nav {
+    position: absolute;
+    top: 66px;
+    left: 14px;
+    right: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 14px;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    background: rgba(4,13,24,.98);
+    backdrop-filter: blur(16px);
+  }
+
+  header.mobile-open nav a { padding: 11px 12px; }
+  .workspace-grid, .grid-3, .skills-grid { grid-template-columns: 1fr; }
+  .module { border-right: 0; }
+  .module:nth-last-child(-n + 2) { border-bottom: 1px solid var(--line); }
+  .module:last-child { border-bottom: 0; }
+  .project-featured { grid-template-columns: 1fr; }
+  .project-num { display: none; }
+  .journey-ribbon { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 550px) {
+  header { padding: 11px 14px; }
+  .brand-monogram { width: 34px; height: 34px; }
+  .brand-text { font-size: 11px; }
+  .brand-text small { font-size: 7px; }
+  .section { padding-left: 18px; padding-right: 18px; }
+  .workspace { padding-left: 14px; padding-right: 14px; }
+  .workspace-top { padding: 11px 14px; font-size: 8px; }
+  .journey-ribbon { grid-template-columns: 1fr 1fr; }
+  .journey-step { padding: 14px 9px; }
+  .project-featured { padding: 22px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}

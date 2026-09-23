@@ -1,0 +1,113 @@
+/* ============================================================
+   IRFANA.E — SECTION / INTERACTION POLISH
+   ============================================================ */
+.section,
+.workspace {
+  position: relative;
+  z-index: 2;
+}
+
+.section-kicker {
+  text-transform: uppercase;
+}
+
+.module,
+.skill-card,
+.pillar-card,
+.edu-card,
+.achievement-card,
+.contact-box {
+  overflow: hidden;
+}
+
+.module,
+.skill-card,
+.pillar-card,
+.edu-card {
+  isolation: isolate;
+}
+
+.module::before,
+.skill-card::before,
+.pillar-card::before,
+.edu-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: linear-gradient(135deg, rgba(72,184,255,.055), transparent 42%);
+}
+
+.certificate-action { margin-top: 14px; }
+.achievement-note { color: var(--muted); font-size: 13px; margin-top: 4px; }
+
+.achievement-card {
+  margin-top: 20px;
+  padding: 24px 28px;
+  border: 1px solid rgba(88,200,255,.28);
+  border-radius: var(--radius-lg);
+  background: linear-gradient(135deg, rgba(8,24,42,.86), rgba(5,12,23,.72));
+  box-shadow: 0 18px 55px rgba(0,0,0,.22);
+}
+
+.achievement-card h3 { margin-top: 8px; font-size: 20px; }
+.achievement-score {
+  margin-top: 16px;
+  color: #8cddff;
+  font: 700 clamp(34px, 5vw, 56px)/1 'JetBrains Mono', monospace;
+  letter-spacing: 2px;
+  text-shadow: 0 0 25px rgba(88,200,255,.25);
+}
+
+.contact-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: linear-gradient(135deg, rgba(8,23,39,.88), rgba(4,11,20,.76));
+}
+
+.contact-box h3 { margin: 7px 0; font-size: 26px; }
+.contact-box p { max-width: 620px; color: var(--muted); font-size: 13px; }
+
+footer {
+  position: relative;
+  z-index: 2;
+  padding: 26px 20px 34px;
+  border-top: 1px solid rgba(91,188,255,.12);
+  color: #617b91;
+  text-align: center;
+  font: 9px/1.6 'JetBrains Mono', monospace;
+  letter-spacing: 1.2px;
+}
+
+@media (max-width: 700px) {
+  .contact-box { flex-direction: column; align-items: flex-start; }
+}
+
+
+/* AI voice / editing demo */
+.ai-media-card {
+  overflow: hidden;
+}
+
+.media-demo {
+  margin-top: 1.2rem;
+}
+
+.media-demo-label {
+  margin-bottom: .65rem;
+  font-family: var(--mono, "JetBrains Mono", monospace);
+  font-size: .68rem;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  opacity: .72;
+}
+
+.media-demo-btn {
+  margin-top: .15rem;
+}

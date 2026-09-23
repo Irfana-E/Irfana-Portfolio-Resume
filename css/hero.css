@@ -1,0 +1,251 @@
+/* ============================================================
+   IRFANA.E — HERO / REFERENCE LAYOUT
+   The supplied cinematic artwork is the hero background.
+   ============================================================ */
+.hero {
+  position: relative;
+  min-height: 100svh;
+  height: 100svh;
+  display: flex;
+  align-items: center;
+  padding: 96px clamp(22px, 6vw, 86px) 76px;
+  overflow: hidden;
+  isolation: isolate;
+  background: #02050b;
+}
+
+/* IMPORTANT: keep the supplied image in its own visible layer. */
+.hero-bg-layer {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(90deg,
+      rgba(1, 5, 13, .82) 0%,
+      rgba(1, 6, 15, .64) 30%,
+      rgba(1, 7, 16, .20) 61%,
+      rgba(1, 7, 16, .04) 100%),
+    linear-gradient(180deg,
+      rgba(1, 4, 10, .25) 0%,
+      rgba(1, 4, 10, .02) 48%,
+      rgba(1, 4, 10, .70) 100%),
+    url("../assets/background/hero-background.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero-bg-layer::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(0, 18, 45, .16), transparent 52%),
+    radial-gradient(circle at 70% 44%, rgba(52, 135, 255, .08), transparent 34%);
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: linear-gradient(90deg, rgba(0, 0, 0, .10), transparent 55%);
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 145px;
+  z-index: 1;
+  pointer-events: none;
+  background: linear-gradient(180deg, transparent, rgba(2, 5, 11, .92));
+}
+
+.hero-inner {
+  position: relative;
+  z-index: 3;
+  width: min(650px, 62vw);
+  max-width: 650px;
+  margin-top: 10px;
+}
+
+.hero-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+  color: #75cfff;
+  font: 600 10px/1.2 'JetBrains Mono', monospace;
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+  text-shadow: 0 0 16px rgba(76, 190, 255, .35);
+}
+
+.hero-kicker::after {
+  content: "";
+  width: 58px;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(88, 200, 255, .8), transparent);
+}
+
+.hero h1 {
+  margin: 0 0 13px;
+  font-size: clamp(54px, 7.4vw, 94px);
+  line-height: .92;
+  letter-spacing: 5px;
+  font-weight: 800;
+  color: #f4f9ff;
+  background: linear-gradient(105deg, #ffffff 8%, #eaf6ff 42%, #74bfff 78%, #9389ff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 9px 28px rgba(0,0,0,.55));
+}
+
+.hero-roles {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 19px;
+  color: #d2e0ef;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: .25px;
+  text-shadow: 0 2px 12px rgba(0,0,0,.8);
+}
+
+.hero-roles span { color: #6b9ab9; opacity: .75; }
+
+.hero-quote {
+  max-width: 500px;
+  margin: 0 0 27px;
+  color: #d0dbe8;
+  font-size: 13px;
+  line-height: 1.7;
+  font-style: italic;
+  text-shadow: 0 2px 15px rgba(0,0,0,.9);
+}
+
+.hud-actions {
+  position: relative;
+  z-index: 4;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  width: min(570px, 100%);
+}
+
+.hud-card {
+  min-height: 64px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border: 1px solid rgba(84, 186, 255, .40);
+  border-radius: 9px;
+  background: linear-gradient(135deg, rgba(6, 25, 43, .72), rgba(3, 12, 23, .48));
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.04), 0 10px 28px rgba(0,0,0,.22), 0 0 18px rgba(38, 153, 236, .07);
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px);
+  transition: transform .22s ease, border-color .22s ease, background .22s ease, box-shadow .22s ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.hud-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(106, 211, 255, .9);
+  background: linear-gradient(135deg, rgba(8, 35, 60, .88), rgba(4, 16, 31, .70));
+  box-shadow: 0 12px 32px rgba(0,0,0,.30), 0 0 24px rgba(59, 181, 255, .18);
+}
+
+.hud-card:focus-visible {
+  outline: 2px solid #58c8ff;
+  outline-offset: 3px;
+}
+
+.hud-icon {
+  flex: 0 0 auto;
+  width: 26px;
+  text-align: center;
+  color: #63d0ff;
+  font: 700 14px/1 'JetBrains Mono', monospace;
+  text-shadow: 0 0 12px rgba(88,200,255,.55);
+}
+
+.hud-meta { min-width: 0; display: flex; flex-direction: column; gap: 2px; }
+.hud-meta strong { color: #f4f8ff; font-size: 9px; letter-spacing: 1px; white-space: nowrap; }
+.hud-meta small { color: #87a9c2; font-size: 8px; letter-spacing: .35px; white-space: nowrap; }
+
+.scroll-cue {
+  position: absolute;
+  z-index: 4;
+  left: clamp(22px, 6vw, 86px);
+  bottom: 24px;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: #91a9bd;
+  font: 9px/1 'JetBrains Mono', monospace;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  transition: color .2s ease;
+  text-decoration: none;
+}
+
+.scroll-cue:hover { color: #d8f4ff; }
+
+.mouse-cue {
+  position: relative;
+  width: 14px;
+  height: 24px;
+  border: 1px solid rgba(191, 225, 246, .72);
+  border-radius: 9px;
+}
+
+.mouse-cue::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  width: 2px;
+  height: 5px;
+  border-radius: 2px;
+  background: #69d4ff;
+  transform: translateX(-50%);
+  box-shadow: 0 0 7px #69d4ff;
+  animation: heroWheel 1.55s ease-in-out infinite;
+}
+
+@keyframes heroWheel {
+  0% { opacity: 0; transform: translate(-50%, 0); }
+  35% { opacity: 1; }
+  100% { opacity: 0; transform: translate(-50%, 7px); }
+}
+
+@media (max-width: 900px) {
+  .hero-inner { width: min(680px, 75vw); }
+  .hero-bg-layer { background-position: 58% center; }
+}
+
+@media (max-width: 800px) {
+  .hero { height: auto; min-height: 100svh; padding-top: 110px; padding-bottom: 88px; }
+  .hero-inner { width: 100%; max-width: 680px; }
+  .hero-bg-layer { background-position: 62% center; }
+  .hud-actions { grid-template-columns: 1fr; max-width: 330px; }
+}
+
+@media (max-width: 550px) {
+  .hero { padding-left: 18px; padding-right: 18px; }
+  .hero h1 { font-size: clamp(46px, 15vw, 68px); letter-spacing: 3px; }
+  .hero-roles { font-size: 11px; }
+  .hero-quote { font-size: 12px; max-width: 360px; }
+  .hero-bg-layer { background-position: 63% center; }
+  .scroll-cue { left: 18px; }
+}
