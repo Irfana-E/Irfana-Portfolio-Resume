@@ -1,15 +1,47 @@
-# IRFANA.E Portfolio — Final Hero Build
+# Greetings This is Irfana .E
 
-Open `index.html` in a modern browser.
+### BCA Student | Web Development | Software Testing | AI & Data Annotation
 
-The hero uses the supplied cinematic background image at:
-`assets/background/hero-background.png`
+I'm a BCA student at the University of Madras, interested in web development, software testing, and AI-related work. I enjoy learning through practical projects, exploring new technologies, and continuously improving my technical and problem-solving skills.
 
-The HTML, CSS, and JavaScript remain separated. The ENTER / ACCESS CONTROL intro and Three.js background are preserved as separate components. Hero buttons navigate to the portfolio sections, and the scroll cue links to Workspace.
+## 🌐 Portfolio
 
-## Audio experience
-- ENTER click: soft futuristic click.
-- Access sequence: subtle verification pulses and a gentle access-granted chime.
-- Main portfolio: very quiet procedural natural/air ambience with occasional soft tones.
-- Audio starts from the ENTER interaction to work with browser autoplay policies.
-- No external audio files are required; the sound layer is generated locally in `js/intro.js`.
+🔗 [View My Live Portfolio](https://irfana-e.github.io/Irfana-Portfolio-Resume/)
+
+## 🛠️ Skills
+
+- HTML, CSS & JavaScript
+- Java & SQL
+- Software Testing & QA
+- Database Management
+- Git & GitHub
+- AI Data Annotation & AI-assisted workflows
+
+## 📌 Projects
+
+### Bata vs Brands
+
+A footwear-focused web project built to practice front-end development, product presentation, and interactive web design.
+
+🔗 [Live Project](https://irfana-e.github.io/Bata-Vs-Brands/)
+
+## 🎓 Education
+
+**Bachelor of Computer Applications (BCA)**  
+University of Madras | 2023–2026
+
+## 📜 Certification
+
+**Introduction to Software Testing**  
+University of Minnesota — Coursera
+
+🔗 [View Certificate](https://coursera.org/share/7009da6bf2724911e481e57d561d637f)
+
+## 🌱 Currently Learning
+
+Web Development • Software Testing • AI & Data Annotation • New Technologies
+
+---
+
+> *Improvements are made little by little, and achievement is made when the littles join together as single.* - Irfana.E
+> Thanking u for visiting my portfolio page.
