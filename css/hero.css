@@ -235,17 +235,43 @@
 }
 
 @media (max-width: 800px) {
-  .hero { height: auto; min-height: 100svh; padding-top: 110px; padding-bottom: 88px; }
-  .hero-inner { width: 100%; max-width: 680px; }
+  .hero {
+    height: auto;
+    min-height: 100vh;
+    min-height: 100svh;
+    align-items: flex-start;
+    padding-top: 84px;
+    padding-bottom: 40px;
+  }
+  .hero-inner { width: 100%; max-width: 680px; margin-top: 0; }
   .hero-bg-layer { background-position: 62% center; }
-  .hud-actions { grid-template-columns: 1fr; max-width: 330px; }
+  .hero-kicker { font-size: 9px; letter-spacing: 1.8px; margin-bottom: 12px; }
+  .hero-kicker::after { display: none; }
+  .hero-roles { margin-bottom: 14px; }
+  .hero-quote { margin-bottom: 22px; }
+
+  /* Bigger, thumb-friendly buttons */
+  .hud-actions { grid-template-columns: 1fr; gap: 12px; width: 100%; max-width: 100%; }
+  .hud-card { min-height: 72px; padding: 14px 18px; gap: 14px; border-radius: 12px; }
+  .hud-icon { width: 34px; font-size: 20px; }
+  .hud-meta { gap: 4px; }
+  .hud-meta strong { font-size: 14px; letter-spacing: 1.2px; }
+  .hud-meta small { font-size: 12px; letter-spacing: .4px; }
+
+  /* the cue would overlap the buttons on small screens */
+  .scroll-cue { display: none; }
+  .hero::after { height: 80px; }
 }
 
 @media (max-width: 550px) {
-  .hero { padding-left: 18px; padding-right: 18px; }
-  .hero h1 { font-size: clamp(46px, 15vw, 68px); letter-spacing: 3px; }
-  .hero-roles { font-size: 11px; }
-  .hero-quote { font-size: 12px; max-width: 360px; }
+  .hero { padding-left: 18px; padding-right: 18px; padding-top: 78px; }
+  .hero h1 { font-size: clamp(44px, 14vw, 64px); letter-spacing: 2px; margin-bottom: 10px; }
+  .hero-roles { font-size: 12px; gap: 6px; }
+  .hero-quote { font-size: 13px; max-width: 100%; line-height: 1.6; }
   .hero-bg-layer { background-position: 63% center; }
-  .scroll-cue { left: 18px; }
+}
+
+@media (max-width: 800px) and (max-height: 700px) {
+  .hero-quote { display: none; }
+  .hud-card { min-height: 64px; padding: 10px 16px; }
 }
