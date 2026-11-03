@@ -111,3 +111,16 @@ footer {
 .media-demo-btn {
   margin-top: .15rem;
 }
+
+
+/* Contact: social links wrap neatly beside the copy */
+.contact-box .btn-group { justify-content: flex-end; max-width: 440px; }
+@media (max-width: 700px) {
+  .contact-box .btn-group { justify-content: flex-start; max-width: none; }
+}
+
+/* Nav: nine links fit on mid-width screens */
+@media (max-width: 1100px) and (min-width: 801px) {
+  nav { gap: 2px; }
+  nav a { padding: 7px 8px; }
+}

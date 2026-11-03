@@ -1,8 +1,8 @@
 # Greetings This is Irfana .E
 
-### BCA Student | Web Development | Software Testing | AI & Data Annotation
+### BCA Graduate | Web Development | Software Testing | AI Contributor & Data Annotator
 
-I'm a BCA student at the University of Madras, interested in web development, software testing, and AI-related work. I enjoy learning through practical projects, exploring new technologies, and continuously improving my technical and problem-solving skills.
+I'm a BCA graduate from the University of Madras working as a freelance AI Contributor / Data Annotator with DataAnnotation.tech, and I run IRA Creates, an independent web and digital branding venture. I enjoy learning through practical projects, exploring new technologies, and continuously improving my technical and problem-solving skills.
 
 ## 🌐 Portfolio
 
@@ -16,8 +16,19 @@ I'm a BCA student at the University of Madras, interested in web development, so
 - Database Management
 - Git & GitHub
 - AI Data Annotation & AI-assisted workflows
+- Three.js, Base44 & SVGator (SVG animation)
 
 ## 📌 Projects
+
+### ReliefChain
+
+Mobile-first disaster relief and emergency response web app built with Base44.
+
+🔗 [Live App](https://misty-rapid-relief-link.base44.app)
+
+### Product on Cruise: The Shadow Knows
+
+Reusable animated product-advertisement template built in SVGator with Claude and the SVGator MCP connector.
 
 ### Bata vs Brands
 

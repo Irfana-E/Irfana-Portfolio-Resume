@@ -5,20 +5,20 @@
       profile: {
         tag: 'PROFILE / 01',
         title: 'A practical learner',
-        text: 'I like learning by doing — building interfaces, studying software testing concepts, experimenting with digital tools and turning new knowledge into practical work.',
-        list: ['BCA Degree', 'Web Development', 'QA Testing', 'Continuous Learning']
+        text: 'I like learning by doing — building interfaces, studying software testing concepts, experimenting with digital tools and turning new knowledge into practical work, including freelance AI evaluation and data annotation.',
+        list: ['BCA Degree', 'Web Development', 'QA Testing', 'AI Evaluation']
       },
       skills: {
         tag: 'SKILLS LAB / 02',
         title: 'Technical foundation',
-        text: 'My BCA foundation covers programming, data structures, databases, web technology, software engineering and other core computing subjects. I continue to strengthen the practical side through projects.',
-        list: ['HTML5', 'CSS3', 'JavaScript', 'Java', 'C', 'C++', 'SQL', 'DBMS', 'Git/GitHub']
+        text: 'My BCA foundation covers programming, data structures, databases, web technology, software engineering and other core computing subjects. I continue to strengthen the practical side through projects, alongside Three.js, SVG animation and AI-assisted automation.',
+        list: ['HTML5', 'CSS3', 'JavaScript', 'Three.js', 'Java', 'C++', 'SQL', 'SVGator', 'Git/GitHub']
       },
       projects: {
         tag: 'PROJECT LAB / 03',
         title: 'Proof through projects',
-        text: 'The strongest evidence in this portfolio is practical work. Bata vs Brands is a live responsive website, while this portfolio demonstrates interactive front-end development.',
-        list: ['Bata vs Brands', 'Responsive UI', 'GitHub Pages', 'JavaScript']
+        text: 'The strongest evidence in this portfolio is practical work: Bata vs Brands is a live responsive website, ReliefChain is a mobile-first disaster relief app, and Product on Cruise is a reusable SVG animation template.',
+        list: ['Bata vs Brands', 'ReliefChain', 'Product on Cruise', 'Three.js Portfolio']
       },
       future: {
         tag: 'NEXT DIRECTION / 04',
