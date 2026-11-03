@@ -124,3 +124,30 @@ footer {
   nav { gap: 2px; }
   nav a { padding: 7px 8px; }
 }
+
+
+/* IRA Creates branding in the Experience section */
+.exp-title { display: flex; align-items: center; gap: 12px; }
+.exp-logo { flex: 0 0 auto; width: 40px; height: 40px; object-fit: contain; filter: drop-shadow(0 0 10px rgba(72,184,255,.35)); }
+
+.brand-card {
+  display: block;
+  width: min(520px, 100%);
+  margin: 18px 0 4px;
+  border: 1px solid rgba(88,200,255,.28);
+  border-radius: 12px;
+  overflow: hidden;
+  background: #04101c;
+  box-shadow: 0 14px 40px rgba(0,0,0,.3);
+  transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease;
+}
+.brand-card:hover { transform: translateY(-3px); border-color: rgba(106,211,255,.7); box-shadow: 0 18px 46px rgba(0,0,0,.38), 0 0 24px rgba(59,181,255,.14); }
+.brand-card img { display: block; width: 100%; height: auto; }
+.brand-card-cap {
+  display: block;
+  padding: 8px 12px;
+  color: #87a9c2;
+  font: 9px/1.4 'JetBrains Mono', monospace;
+  letter-spacing: 1.6px;
+  border-top: 1px solid rgba(91,188,255,.14);
+}
